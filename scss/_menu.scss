@@ -1,4 +1,5 @@
-.menu{height: 280vh;
+.menu{
+     min-height: 100rem;
      width: 100%;
      box-sizing: border-box;
      position: relative;
@@ -66,7 +67,7 @@
                    position: relative;}
 
 
-                   .menuItem-details{margin-right: 10.5rem;
+                   .menuItem-details{margin-right: 5rem;
                         
                    }   
 
@@ -75,12 +76,12 @@
                    .menuItem-topic{font-size: 1rem;
                     font-weight: 600;}
 
-    .menu-itemDes{font-size: 10px;}
+    .menu-itemDes{font-size: 12px;}
 
 
-    .menuItem-price{font-size: 0.8rem;
+    .menuItem-price{font-size: 0.6rem;
                   float: right;
-                  margin-right: -10rem;
+                  margin-right: -4rem;
                   padding-left: 1rem;
                   border-left: 2px solid rgba(0,0,0,0.3);
                    }
@@ -127,6 +128,9 @@
 
 
       @include breakpoints-up(large){
+
+        min-height: 100vh;
+        
 
 
 
