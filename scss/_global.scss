@@ -1,0 +1,43 @@
+* {margin: 0;
+  padding: 0;
+ box-sizing: border-box;}
+
+
+ body , input {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #c87e4f;
+    
+ }
+
+
+ body {overflow-x: hidden;
+      background-color: white;
+       font-family: 'inter';}
+
+
+
+//.section { padding: 7rem 2rem;}
+
+
+.flex {display: flex;
+      align-items: center;}
+
+a {color:white;}      
+
+
+.container {max-width: 1030px;
+            width: 100%;
+            margin: 0 auto ;
+            padding: 0 2rem;
+           padding-top: 1.8rem;}  
+            
+            a {text-decoration: none;} 
+            
+            
+
+ 
+
+  
+
+

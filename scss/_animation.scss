@@ -1,0 +1,41 @@
+.has-fade{visibility: hidden;}
+
+@keyframes slide-in {
+
+    from {right: -100%;
+        opacity: 0;
+         visibility: hidden;}
+
+    to {right: 0;
+      opacity: 1;
+      visibility: visible;}
+}
+
+.slide-in {animation: slide-in 400ms ease-in-out forwards;}
+
+
+
+@keyframes slide-out {
+
+    from {right: 0;
+         opacity: 1;
+         visibility: visible;}
+
+    to {right: -100%;
+       opacity: 0;
+       visibility: hidden;}
+}
+
+.slide-out {animation: slide-out 400ms ease-in-out forwards;}
+
+
+
+
+.jactive {
+    background-color: white;
+    color: #333;
+    //position: sticky;
+    box-shadow: 0 0 10px rgba(0 , 0, 0 , 0.2);
+
+}
+
