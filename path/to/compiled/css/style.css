@@ -13,7 +13,7 @@ body, input {
 body {
   overflow-x: hidden;
   background-color: white;
-  font-family: "inter";
+  font-family: "Public Sans", sans-serif;
 }
 
 .flex {
@@ -214,7 +214,7 @@ a {
 }
 
 .hero {
-  height: 100vh;
+  height: 130vh;
   position: relative;
   width: 100%;
   background: url(/images/homeImg1.jpg);
@@ -299,7 +299,7 @@ a {
   padding: 0 5rem;
 }
 .about .about-image {
-  height: 100%;
+  height: 90%;
   border: 6px solid #333;
 }
 .about .about-ImageContent {
@@ -312,16 +312,16 @@ a {
   left: -1.4rem;
   color: white;
   background-color: #2c3034;
-  font-size: 1.1rem;
+  font-size: 0.8rem;
   border-radius: 50%;
   padding: 10px;
 }
 .about .aboutImg-textBox {
   position: absolute;
   margin-top: 15rem;
-  margin-left: 7rem;
-  font-size: 1.1rem;
-  padding: 0.5rem;
+  margin-left: 5rem;
+  font-size: 0.8rem;
+  padding: 0.8rem;
   background-color: white;
   max-width: 260px;
   width: 100%;
@@ -417,6 +417,10 @@ a {
     display: grid;
     row-gap: 4rem;
   }
+  .about .about-image {
+    height: 100%;
+    border: 6px solid #333;
+  }
   .about .about-ImageContent {
     position: relative;
     max-width: 400px;
@@ -473,7 +477,7 @@ a {
 }
 
 .menu {
-  height: 230vh;
+  height: 280vh;
   width: 100%;
   box-sizing: border-box;
   position: relative;
@@ -542,7 +546,7 @@ a {
   font-weight: 600;
 }
 .menu .menu-itemDes {
-  font-size: 0.8rem;
+  font-size: 10px;
 }
 .menu .menuItem-price {
   font-size: 0.8rem;
@@ -704,7 +708,7 @@ a {
 }
 
 .review {
-  height: 200vh;
+  height: 250vh;
   width: 100%;
   background-color: #f2f2f2;
   margin-top: 20px;
@@ -826,7 +830,7 @@ a {
 .newsletter .section-description {
   text-align: center;
   margin-bottom: 2rem;
-  font-size: 20px;
+  font-size: 15px;
   color: #888682;
 }
 .newsletter .logo-icon, .newsletter .logo-text {
@@ -861,6 +865,9 @@ a {
   border: 2px solid #888682;
   padding: 1.2rem 2rem;
   outline: none;
+}
+.newsletter input {
+  font-size: 20px;
 }
 .newsletter .newsletter-inputBox {
   position: relative;
@@ -917,14 +924,14 @@ footer {
   overflow: hidden;
 }
 footer .logo-content {
-  font-size: 15px;
+  font-size: 11px;
 }
 footer .logo-text {
-  font-size: 14px;
+  font-size: 8px;
 }
 footer .content-description, footer .location-text {
   color: #888682;
-  font-size: 11px;
+  font-size: 10px;
 }
 footer.content-description {
   text-align: left;
@@ -953,14 +960,14 @@ footer ul {
 }
 footer .footerLinks-title {
   color: white;
-  font-size: 15px;
+  font-size: 10px;
 }
 footer .map-icon {
-  color: #888682;
-  font-size: 20px;
+  color: white;
+  font-size: 8px;
 }
 footer .footer-link {
-  font-size: 11px;
+  font-size: 8px;
   color: rgba(255, 255, 255, 0.5);
   transition: all 300ms ease-in-out;
 }
@@ -970,9 +977,9 @@ footer .footer-link:hover {
 footer .footer-copyRight {
   max-width: 970px;
   margin: 0 auto;
-  padding-top: 20px;
+  padding-top: 40px;
   text-align: center;
-  font-size: 11px;
+  font-size: 8px;
   align-items: center;
   color: rgba(255, 255, 255, 0.5);
 }
@@ -1005,6 +1012,16 @@ footer .footer-copyRight {
     display: grid;
     row-gap: 1rem;
   }
+  footer .logo-content {
+    font-size: 15px;
+  }
+  footer .logo-text {
+    font-size: 14px;
+  }
+  footer .content-description, footer .location-text {
+    color: #888682;
+    font-size: 11px;
+  }
   footer .footer-linkContent {
     display: flex;
     align-items: center;
@@ -1016,6 +1033,7 @@ footer .footer-copyRight {
   }
   footer .footerLinks-title {
     color: white;
+    font-size: 15px;
   }
   footer .map-icon {
     color: #888682;
