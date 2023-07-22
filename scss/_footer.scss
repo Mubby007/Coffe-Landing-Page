@@ -4,8 +4,8 @@ footer{
 
 
     background-color: #333;
-    margin-top: 500px;
-    height: 40vh;
+    //margin-top: 500px;
+    min-height: 40vh;
     width: 100%;
     overflow: hidden;
 
@@ -95,8 +95,8 @@ footer{
     @include breakpoints-up(large){
 
 
-        margin-top: 400px;
-        height: 48vh;
+       // margin-top: 400px;
+       min-height: 48vh;
         width: 100%;
     
 

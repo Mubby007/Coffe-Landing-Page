@@ -1,5 +1,5 @@
 .review{
-    height: 250vh;
+    min-height: 100rem;
       width: 100%;
       background-color: #f2f2f2;
       margin-top: 20px;
@@ -65,7 +65,7 @@
       @include breakpoints-up(large){
 
 
-        height: 110vh;
+        min-height: 50rem;
 
         .section-subtitle{font-size: 1.6rem;
             letter-spacing: 1px;

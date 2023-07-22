@@ -1,5 +1,7 @@
-.newsletter{height: 20vh;
+.newsletter{min-height: 20rem;
             width: 100%;
+            overflow: hidden;
+            box-sizing: border-box;
 
     .section-description {text-align: center;
         margin-bottom: 2rem;
@@ -78,7 +80,7 @@
             align-items: center;
             justify-content: center;
             column-gap: 20px;
-            top: 100px;
+            //top: 100px;
             
 
 
@@ -95,6 +97,8 @@
 
 
          @include breakpoints-down(medium){
+
+            min-height: 10rem;
 
 
 

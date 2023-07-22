@@ -217,6 +217,7 @@ a {
   height: 130vh;
   position: relative;
   width: 100%;
+  overflow: hidden;
   background: url(/images/homeImg1.jpg);
   background-position: top;
   background-size: cover;
@@ -291,6 +292,7 @@ a {
   width: 100%;
   padding-top: 40px;
   box-sizing: border-box;
+  overflow: hidden;
 }
 .about .about-content {
   display: flex;
@@ -480,8 +482,8 @@ a {
   min-height: 100rem;
   width: 100%;
   box-sizing: border-box;
+  overflow: hidden;
   position: relative;
-  margin-top: 300px;
   color: white;
   background-color: #2c3034;
 }
@@ -668,6 +670,8 @@ a {
 .brand {
   height: 100%;
   width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 .brand .section-subtitle {
   font-size: 1.6rem;
@@ -711,7 +715,7 @@ a {
 }
 
 .review {
-  height: 250vh;
+  min-height: 100rem;
   width: 100%;
   background-color: #f2f2f2;
   margin-top: 20px;
@@ -768,7 +772,7 @@ a {
 }
 @media (min-width: 64em) {
   .review {
-    height: 110vh;
+    min-height: 50rem;
   }
   .review .section-subtitle {
     font-size: 1.6rem;
@@ -827,8 +831,10 @@ a {
 }
 
 .newsletter {
-  height: 20vh;
+  min-height: 20rem;
   width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 .newsletter .section-description {
   text-align: center;
@@ -882,12 +888,14 @@ a {
   align-items: center;
   justify-content: center;
   column-gap: 20px;
-  top: 100px;
 }
 .newsletter .media-icon .icon {
   color: #888682;
 }
 @media (max-width: 63.935em) {
+  .newsletter {
+    min-height: 10rem;
+  }
   .newsletter .section-description {
     text-align: center;
     margin-bottom: 2rem;
@@ -921,8 +929,7 @@ a {
 
 footer {
   background-color: #333;
-  margin-top: 500px;
-  height: 40vh;
+  min-height: 40vh;
   width: 100%;
   overflow: hidden;
 }
@@ -988,8 +995,7 @@ footer .footer-copyRight {
 }
 @media (min-width: 64em) {
   footer {
-    margin-top: 400px;
-    height: 48vh;
+    min-height: 48vh;
     width: 100%;
   }
   footer .logo-content {
