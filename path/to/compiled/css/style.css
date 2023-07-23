@@ -1,3 +1,10 @@
+html {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +12,7 @@
 }
 
 body, input {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   font-weight: 400;
   color: #c87e4f;
 }
@@ -17,6 +24,10 @@ body {
   box-sizing: border-box;
   background-color: white;
   font-family: "Public Sans", sans-serif;
+}
+
+.no-scroll {
+  overflow-y: hidden;
 }
 
 .flex {
@@ -71,10 +82,10 @@ a {
   position: absolute;
   top: 0;
   right: 0;
-  min-height: 100vh;
-  height: 100%;
+  left: 0;
+  min-height: 100dvh;
   overflow-x: hidden;
-  width: 100%;
+  max-width: 100%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   height: 100%;
   padding-top: 10rem;
@@ -182,7 +193,7 @@ a {
 
 @keyframes slide-in {
   from {
-    right: -100%;
+    right: 100%;
     opacity: 0;
     visibility: hidden;
   }
@@ -203,7 +214,7 @@ a {
     visibility: visible;
   }
   to {
-    right: -100%;
+    right: 100%;
     opacity: 0;
     visibility: hidden;
   }
@@ -219,10 +230,10 @@ a {
 }
 
 .hero {
-  height: 130vh;
+  height: 100dvh;
   position: relative;
   width: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
   background: url(/images/homeImg1.jpg);
   background-position: top;
   background-size: cover;
@@ -293,11 +304,10 @@ a {
 }
 
 .about {
-  height: 140vh;
+  height: 140dvh;
   width: 100%;
   padding-top: 40px;
   box-sizing: border-box;
-  overflow: hidden;
 }
 .about .about-content {
   display: flex;
@@ -413,6 +423,9 @@ a {
   margin-left: 8px;
 }
 @media (min-width: 64em) {
+  .about {
+    height: 100dvh;
+  }
   .about .about-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -494,7 +507,7 @@ a {
 }
 
 .menu {
-  min-height: 100rem;
+  height: 230dvh;
   width: 100%;
   box-sizing: border-box;
   overflow: hidden;
@@ -598,7 +611,7 @@ a {
 }
 @media (min-width: 64em) {
   .menu {
-    min-height: 100vh;
+    height: 150dvh;
   }
   .menu .section-subtitle {
     font-size: 1.6rem;
@@ -730,7 +743,7 @@ a {
 }
 
 .review {
-  min-height: 100rem;
+  height: 240dvh;
   width: 100%;
   background-color: #f2f2f2;
   margin-top: 20px;
@@ -784,10 +797,11 @@ a {
 .review .testimonial-text {
   font-size: 16px;
   text-align: left;
+  line-height: 1.5;
 }
 @media (min-width: 64em) {
   .review {
-    min-height: 50rem;
+    height: 110dvh;
   }
   .review .section-subtitle {
     font-size: 1.6rem;

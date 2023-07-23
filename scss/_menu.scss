@@ -1,5 +1,5 @@
 .menu{
-     min-height: 100rem;
+     height: 230dvh;
      width: 100%;
      box-sizing: border-box;
      overflow: hidden;
@@ -130,7 +130,7 @@
 
       @include breakpoints-up(large){
 
-        min-height: 100vh;
+        height: 150dvh;
         
 
 

@@ -1,8 +1,7 @@
-.about{height: 140vh;
+.about{height: 140dvh;
       width: 100%;
       padding-top: 40px;
       box-sizing: border-box;
-      overflow: hidden;
 
 
       .about-content {display: flex;
@@ -153,7 +152,7 @@
 
       @include breakpoints-up(large){
         
-
+          height: 100dvh;
 
       
     

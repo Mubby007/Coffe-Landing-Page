@@ -27,6 +27,8 @@ var swiper = new Swiper(".mySwiper", {
 
 const header = document.getElementById("header")
 
+const body = document.querySelector("body")
+
 const overlay = document.querySelector(".overlay")
 
 const btnHamburger = document.querySelector("#btnHamburger")
@@ -36,11 +38,12 @@ const slideElems = document.querySelectorAll(".has-fade")
 btnHamburger.addEventListener("click", ()=>{
     if(btnHamburger.classList.contains("open")){
         btnHamburger.classList.remove("open")
+        document.body.style.overflow = 'visible'
         slideElems.forEach(function(element){
           
             element.classList.add("slide-out")
         element.classList.remove("slide-in")
-        
+        //hero.classList.remove("no-scroll")
 
         })
         
@@ -48,11 +51,13 @@ btnHamburger.addEventListener("click", ()=>{
 
     else {
         btnHamburger.classList.add("open")
+        document.body.style.overflow = 'hidden'
 
         slideElems.forEach(function(element){
 
             element.classList.add("slide-in")
             element.classList.remove("slide-out")
+           // hero.classList.add("no-scroll")
         })
         
     }

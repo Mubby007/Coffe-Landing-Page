@@ -2,7 +2,7 @@
 
 @keyframes slide-in {
 
-    from {right: -100%;
+    from {right: 100%;
         opacity: 0;
          visibility: hidden;}
 
@@ -21,7 +21,7 @@
          opacity: 1;
          visibility: visible;}
 
-    to {right: -100%;
+    to {right: 100%;
        opacity: 0;
        visibility: hidden;}
 }
