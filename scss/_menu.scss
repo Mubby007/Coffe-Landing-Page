@@ -1,5 +1,5 @@
 .menu{
-     height: 230dvh;
+     height: 100dvh;
      width: 100%;
      box-sizing: border-box;
      overflow: hidden;
@@ -9,23 +9,43 @@
     background-color: #2c3034;
 
 
+    
+
+
+
+    .hide-for-mobile {
+
+      @include breakpoints-down(medium){
+          display: none;
+      }
+  }
+
+  .hide-for-desktop {
+
+      @include breakpoints-up(large){
+          display: none;
+      }
+  }
+
+
+
     @include breakpoints-up(large){
       margin-top: 20px;
       height: 150vh;
     }
 
 
-    .contain {max-width: 1030px;
+    .contain {max-width: 980px;
         width: 100%;
         margin: 0 auto ;
         padding: 0 2rem;
-       padding-top: 1.8rem;}  
+       padding-top: 1.6rem;}  
         
 
 
 
 
-    .section-subtitle{font-size: 1.6rem;
+    .section-subtitle{font-size: 1.4rem;
         letter-spacing: 1px;
         font-weight: 400;
        text-align: center;
@@ -35,20 +55,20 @@
 
 
        .section-title {text-align: center;
-        font-size:2.4rem ;
+        font-size:2rem ;
       font-weight: 400;
        margin: 1rem 0;}
        
   
   .section-description {text-align: center;
                margin-bottom: 2rem;
-               font-size: 20px;}
+               font-size: 15px;}
 
 
                & .menu-content{display: flex;
                 flex-direction: column;
-                column-gap: 6rem;
-                margin-top: 6rem;
+                column-gap: 5rem;
+                margin-top: 4rem;
             
                  }
                     
@@ -130,14 +150,14 @@
 
       @include breakpoints-up(large){
 
-        height: 150dvh;
+        height: 100dvh;
         
 
 
 
 
 
-        .section-subtitle{font-size: 1.6rem;
+        .section-subtitle{font-size: 1.4rem;
         letter-spacing: 1px;
         font-weight: 400;
        text-align: center;
@@ -147,7 +167,7 @@
 
 
        .section-title {text-align: center;
-        font-size:2.4rem ;
+        font-size:2rem ;
       font-weight: 400;
        margin: 1rem 0;}
     
@@ -162,16 +182,16 @@
     
     
     
-                 & .menu-content{display: grid;
+                  .menu-content{display: grid;
                     grid-template-columns: 1.8fr 1fr;
                     column-gap: 6rem;
-                    margin-top: 6rem;
+                    margin-top: 0rem;
                 
                      }
                 
                 
-                     .menu-img{height: 80px;
-                              width: 80px;
+                     .menu-img{height: 50px;
+                              width: 50px;
                               margin-right: 0.5rem;
                             }
                 
@@ -181,14 +201,14 @@
                               row-gap: 10px;}
                     
                     .menu-item{background-color: white;
-                              padding:  1rem ;
+                              padding:  0.5rem ;
                               color: #2c3034;
                              position: relative;}
 
 
                              .section-description {text-align: center;
                margin-bottom: 2rem;
-               font-size: 1.6rem;}
+               font-size: 1.2rem;}
 
                 
                              
@@ -201,7 +221,7 @@
                     }   
                     
                     
-                    .menuItem-topic{font-size: 1.3rem;
+                    .menuItem-topic{font-size: 1.2rem;
                                     font-weight: 600;}
                 
                     .menu-itemDes{font-size: 1rem;}
@@ -217,14 +237,17 @@
                 
                    // .discount-price{}
                     
-                    .real-price{text-decoration: line-through;}  
+                    .real-price{text-decoration: line-through;} 
+                    
+                    
+                    
                     
                     
              .time-topic {background-color: #c87e4f;
                          width: 100%;
                          display: block;
                          text-align: center;
-                         font-size: 1.8rem;
+                         font-size: 1.6rem;
                          font-weight: 500;
                          padding: 1.5rem 0;} 
                          
@@ -232,7 +255,7 @@
              .time-list{background-color: white;
                        color: #2c3034;
                       justify-content: space-between;
-                      padding: 1.5rem;
+                      padding: 0.9rem;
                       font-size: 1rem;
                       border-bottom: 2px solid rgba(0,0,0,0.3);
                     
@@ -243,29 +266,4 @@
 
     }
 
-
-
-
-
-
-
-   
-
-
-
-
-
-
-
-
-   
-
-
-
-
-
-
-
-
-
-}
+  }

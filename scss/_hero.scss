@@ -28,18 +28,19 @@
                  transform: translate(-50%, -50%);
                  z-index: 0;
                  display: grid;
+                 //min-width: 200px;
                  justify-content: center;
                 
                 }
 
    .home-details {color: white;
                   text-align: center;
-                  font-size: 1.3rem;
+                  font-size: 1.2rem;
                   font-weight: 400;
                   margin-top: 60px;
 
                   @include breakpoints-up(large){
-                    font-size: 1.6rem;
+                    font-size: 1.4rem;
 
                   }
 
@@ -47,11 +48,11 @@
 
    .home-subtitle {color: white;
     text-align: center;
-    font-size:2.9rem ;
+    font-size:2.4rem ;
     font-weight: 500;
 
     @include breakpoints-up(large){
-        font-size: 4rem;
+        font-size: 3.4rem;
 
       }
      

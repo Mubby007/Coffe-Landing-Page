@@ -1,0 +1,65 @@
+.time-table-mobile {
+    display: block;
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #2c3034;
+    padding-top: 0;
+
+
+    .container1 {max-width: 830px;
+        width: 100%;
+        margin: 0 auto ;
+        padding: 0 2rem;
+       padding-top: 0.5rem;}  
+
+
+
+  
+
+
+    .time-topic {background-color: #c87e4f;
+        width: 100%;
+        display: block;
+        color: white;
+        text-align: center;
+        font-size: 1.5rem;
+        margin-top: 10px;
+        font-weight: 500;
+        padding: 1.5rem 0;}
+        
+        
+
+.time-list{background-color: white;
+         color: #2c3034;
+        justify-content: space-between;
+        padding: 1.5rem;
+        font-size: 1rem;
+        border-bottom: 2px solid rgba(0,0,0,0.3);
+      
+      &:nth-child(7){border-bottom: none;}}            
+ 
+
+
+    .hide-for-mobile {
+
+        @include breakpoints-down(medium){
+            display: none;
+        }
+    }
+  
+    .hide-for-desktop {
+  
+        @include breakpoints-up(large){
+            display: none;
+        }
+    }
+
+
+    @include breakpoints-up(large)
+    {
+        height: 0vh;
+    }
+
+   
+}
