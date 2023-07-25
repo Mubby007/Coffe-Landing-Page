@@ -7,11 +7,16 @@
     padding-top: 0;
 
 
-    .container1 {max-width: 830px;
+    .contain {max-width: 830px;
         width: 100%;
         margin: 0 auto ;
         padding: 0 2rem;
-       padding-top: 0.5rem;}  
+       padding-top: 0.5rem;
+     
+     @include breakpoints-up(medium){
+        max-width: 630px;
+        width: 70%;
+     }}  
 
 
 
@@ -26,7 +31,12 @@
         font-size: 1.5rem;
         margin-top: 10px;
         font-weight: 500;
-        padding: 1.5rem 0;}
+        padding: 1.5rem 0;
+       
+       @include breakpoints-up(medium){
+        font-size: 1.2rem;
+        padding: 1.1rem 0;
+       }}
         
         
 
@@ -37,7 +47,14 @@
         font-size: 1rem;
         border-bottom: 2px solid rgba(0,0,0,0.3);
       
-      &:nth-child(7){border-bottom: none;}}            
+      &:nth-child(7){border-bottom: none;}
+    
+    @include breakpoints-up(medium){
+        font-size: 0.6rem;
+        padding: 0.9rem;
+
+    }
+}            
  
 
 

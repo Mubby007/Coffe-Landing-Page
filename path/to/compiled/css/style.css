@@ -309,41 +309,6 @@ a {
   width: 100%;
   padding-top: 40px;
   box-sizing: border-box;
-  /* @include breakpoints-down(small){
-
-     .about-image{height: 70%;
-       border: 6px solid #333}
-
-       .aboutImg-textBox {
-         position: absolute;
-         //bottom: 2rem;
-         margin-top: 13rem;
-         //left: 6rem;
-         margin-left: 5rem;
-         font-size: 0.6rem;
-         padding: 0.6rem;
-         background-color: white;
-         max-width: 180px;
-         width: 90%;
-         text-align: left;
-         border: 6px solid #2c3034;
-         color: black;
-     } 
-
-
-     .heart-icon {position: absolute;
-       left: -1.4rem;
-       // top: 10px;
-       color: white;
-        background-color: #2c3034;
-        font-size: 0.4rem;
-       border-radius: 50%;
-       padding: 10px;}
-
-
-
-
-   } */
 }
 .about .about-content {
   display: flex;
@@ -541,6 +506,22 @@ a {
     text-align: left;
   }
 }
+@media (min-width: 40em) {
+  .about {
+    padding-top: 20px;
+  }
+  .about .about-content {
+    display: flex;
+    flex-direction: row;
+    column-gap: 100px;
+    align-items: center;
+    padding: 0 2rem;
+  }
+  .about .about-image {
+    height: 100%;
+    border: 6px solid #333;
+  }
+}
 
 .menu {
   height: 100dvh;
@@ -564,18 +545,18 @@ a {
 @media (min-width: 64em) {
   .menu {
     margin-top: 20px;
-    height: 150vh;
+    height: 100vh;
   }
 }
 .menu .contain {
-  max-width: 980px;
+  max-width: 1080px;
   width: 100%;
   margin: 0 auto;
   padding: 0 2rem;
   padding-top: 1.6rem;
 }
 .menu .section-subtitle {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   letter-spacing: 1px;
   font-weight: 400;
   text-align: center;
@@ -583,20 +564,36 @@ a {
 }
 .menu .section-title {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 400;
   margin: 1rem 0;
+}
+@media (min-width: 40em) {
+  .menu .section-title {
+    font-size: 1.5rem;
+  }
 }
 .menu .section-description {
   text-align: center;
   margin-bottom: 2rem;
   font-size: 15px;
 }
+@media (min-width: 40em) {
+  .menu .section-description {
+    margin-bottom: 0;
+    font-size: 12px;
+  }
+}
 .menu .menu-content {
   display: flex;
   flex-direction: column;
   column-gap: 5rem;
-  margin-top: 4rem;
+  margin-top: 3rem;
+}
+@media (min-width: 40em) {
+  .menu .menu-content {
+    margin-top: 2rem;
+  }
 }
 .menu .menu-img {
   height: 50px;
@@ -608,11 +605,24 @@ a {
   flex-direction: column;
   row-gap: 10px;
 }
+@media (min-width: 40em) {
+  .menu .menu-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 1fr 1fr;
+    margin-top: -1rem;
+  }
+}
 .menu .menu-item {
   background-color: white;
   padding: 0.5rem;
   color: #2c3034;
   position: relative;
+}
+@media (min-width: 40em) {
+  .menu .menu-item {
+    margin-right: 20px;
+  }
 }
 .menu .menuItem-details {
   margin-right: 5rem;
@@ -621,8 +631,19 @@ a {
   font-size: 1rem;
   font-weight: 600;
 }
+@media (min-width: 40em) {
+  .menu .menuItem-topic {
+    font-size: 0.7rem;
+    font-weight: 600;
+  }
+}
 .menu .menu-itemDes {
   font-size: 12px;
+}
+@media (min-width: 40em) {
+  .menu .menu-itemDes {
+    font-size: 10px;
+  }
 }
 .menu .menuItem-price {
   font-size: 0.6rem;
@@ -740,6 +761,15 @@ a {
     border-bottom: none;
   }
 }
+@media (min-width: 40em) {
+  .menu .section-subtitle {
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    font-weight: 400;
+    text-align: center;
+    color: #c87e4f;
+  }
+}
 
 .brand {
   height: 100%;
@@ -762,12 +792,25 @@ a {
   justify-self: stretch;
   margin-left: 10px;
 }
+@media (min-width: 40em) {
+  .brand .brand-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+  }
+}
 .brand .brand-img {
   height: 150px;
   width: 150px;
   object-fit: contain;
   opacity: 0.4;
   transition: all 300ms ease-in-out;
+}
+@media (min-width: 40em) {
+  .brand .brand-img {
+    height: 100px;
+    width: 100px;
+  }
 }
 .brand .brand-img:hover {
   opacity: 1;
@@ -796,12 +839,18 @@ a {
   background-color: #2c3034;
   padding-top: 0;
 }
-.time-table-mobile .container1 {
+.time-table-mobile .contain {
   max-width: 830px;
   width: 100%;
   margin: 0 auto;
   padding: 0 2rem;
   padding-top: 0.5rem;
+}
+@media (min-width: 40em) {
+  .time-table-mobile .contain {
+    max-width: 630px;
+    width: 70%;
+  }
 }
 .time-table-mobile .time-topic {
   background-color: #c87e4f;
@@ -814,6 +863,12 @@ a {
   font-weight: 500;
   padding: 1.5rem 0;
 }
+@media (min-width: 40em) {
+  .time-table-mobile .time-topic {
+    font-size: 1.2rem;
+    padding: 1.1rem 0;
+  }
+}
 .time-table-mobile .time-list {
   background-color: white;
   color: #2c3034;
@@ -824,6 +879,12 @@ a {
 }
 .time-table-mobile .time-list:nth-child(7) {
   border-bottom: none;
+}
+@media (min-width: 40em) {
+  .time-table-mobile .time-list {
+    font-size: 0.6rem;
+    padding: 0.9rem;
+  }
 }
 @media (max-width: 63.935em) {
   .time-table-mobile .hide-for-mobile {
@@ -842,65 +903,71 @@ a {
 }
 
 .review {
-  height: 240dvh;
+  height: 100dvh;
   width: 100%;
   background-color: #f2f2f2;
   margin-top: 20px;
+  box-sizing: border-box;
 }
 .review .section-subtitle {
-  font-size: 1.2rem;
+  font-size: 1rem;
   letter-spacing: 1px;
   font-weight: 400;
   text-align: center;
   color: #c87e4f;
 }
 .review .section-title {
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   text-align: center;
-  font-size: 2.4rem;
   font-weight: 400;
   margin: 1rem 0;
   color: #333;
 }
 .review .section-description {
-  font-size: 15px;
+  font-size: 12px;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
   color: #333;
 }
 .review .testimonial {
   display: flex;
   flex-direction: column;
-  row-gap: 70px;
-  padding-top: 30px;
+  row-gap: 10px;
+}
+@media (min-width: 40em) {
+  .review .testimonial {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
 }
 .review .testimonial-content {
-  padding: 20px 60px;
+  padding: 15px;
   align-items: center;
   display: flex;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
   flex-direction: column;
-  row-gap: 30px;
+  row-gap: 15px;
   border-radius: 50px;
   color: #333;
 }
 .review .testimonial-img {
-  width: 100px;
-  height: 100px;
+  width: 40px;
+  height: 40px;
 }
 .review .testimonial-img .profileImg1 {
-  width: 100px;
-  height: 100px;
+  width: 40px;
+  height: 40px;
   border-radius: 100%;
 }
 .review .testimonial-text {
-  font-size: 16px;
+  font-size: 11px;
   text-align: left;
-  line-height: 1.5;
+  line-height: 1.2;
 }
 @media (min-width: 64em) {
   .review {
-    height: 110dvh;
+    height: 100dvh;
   }
   .review .section-subtitle {
     font-size: 1.6rem;

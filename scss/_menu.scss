@@ -31,11 +31,11 @@
 
     @include breakpoints-up(large){
       margin-top: 20px;
-      height: 150vh;
+      height: 100vh;
     }
 
 
-    .contain {max-width: 980px;
+    .contain {max-width: 1080px;
         width: 100%;
         margin: 0 auto ;
         padding: 0 2rem;
@@ -45,7 +45,7 @@
 
 
 
-    .section-subtitle{font-size: 1.4rem;
+    .section-subtitle{font-size: 1.2rem;
         letter-spacing: 1px;
         font-weight: 400;
        text-align: center;
@@ -55,20 +55,34 @@
 
 
        .section-title {text-align: center;
-        font-size:2rem ;
+        font-size:1.8rem ;
       font-weight: 400;
-       margin: 1rem 0;}
+       margin: 1rem 0;
+       
+      @include breakpoints-up(medium){
+        font-size: 1.5rem;
+
+      }
+    }
        
   
   .section-description {text-align: center;
                margin-bottom: 2rem;
-               font-size: 15px;}
+               font-size: 15px;
+               @include breakpoints-up(medium){
+                margin-bottom: 0;
+                font-size: 12px;
+               }}
 
 
                & .menu-content{display: flex;
                 flex-direction: column;
                 column-gap: 5rem;
-                margin-top: 4rem;
+                margin-top: 3rem;
+
+                @include breakpoints-up(medium){
+                  margin-top:2rem ;
+                }
             
                  }
                     
@@ -80,12 +94,27 @@
       
           .menu-items{display: flex;
                      flex-direction: column;
-                    row-gap: 10px;}
+                    row-gap: 10px;
+                  
+                  @include breakpoints-up(medium){
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-areas: 1fr 1fr;
+                    margin-top: -1rem;
+
+                  }
+                
+                }
           
           .menu-item{background-color: white;
                     padding:  0.5rem ;
                     color: #2c3034;
-                   position: relative;}
+                   position: relative;
+                   
+                  
+                  @include breakpoints-up(medium){
+                    margin-right: 20px;
+                  }}
 
 
                    .menuItem-details{margin-right: 5rem;
@@ -95,9 +124,19 @@
 
 
                    .menuItem-topic{font-size: 1rem;
-                    font-weight: 600;}
+                    font-weight: 600;
+                   
+                    @include breakpoints-up(medium){
+                      font-size: 0.7rem;
+                      font-weight: 600;
+                    }
+                  
+                  }
 
-    .menu-itemDes{font-size: 12px;}
+    .menu-itemDes{font-size: 12px;
+                @include breakpoints-up(medium){
+                  font-size: 10px;
+                }}
 
 
     .menuItem-price{font-size: 0.6rem;
@@ -262,6 +301,27 @@
                     &:nth-child(7){border-bottom: none;}}            
     
 
+
+
+    }
+
+
+    @include breakpoints-up(medium){
+
+      .section-subtitle{font-size: 1.3rem;
+        letter-spacing: 1px;
+        font-weight: 400;
+       text-align: center;
+       color:#c87e4f ;
+
+       }
+
+
+       
+
+
+        
+     
 
 
     }
